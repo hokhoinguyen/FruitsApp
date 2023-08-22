@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AppleActivity">
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="734dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/main_bg_top"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnBackApple"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back"
+                android:layout_margin="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textSize="50dp"
+                android:layout_marginLeft="70dp"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:textColor="@color/white">
+
+            </TextView>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="431dp"
+            android:layout_height="310dp"
+            app:srcCompat="@drawable/apple" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/fruit_detail"
+            >
+
+            <TextView
+                android:id="@+id/fruitName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="140dp"
+                android:fontFamily="cursive"
+                android:text="Apple"
+                android:textSize="50dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:layout_marginTop="30dp"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/priceApple"
+                    android:layout_width="347dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="110dp"
+                    android:text="50000 vnd"
+                    android:textSize="30dp"
+                    android:textStyle="bold"></TextView>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/unit"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="0dp"-->
+
+<!--                    android:text="per Kg"-->
+<!--                    android:textSize="30dp"-->
+<!--                    android:textStyle="bold"></TextView>-->
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                android:layout_marginTop="125dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status: "
+                        android:textSize="25dp"
+                        android:textStyle="italic"
+                        android:layout_gravity="center"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rating:"
+                        android:textSize="30dp"
+                        android:textStyle="italic"
+                        android:layout_gravity="center"></TextView>
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        />
+                    <Button
+                        android:id="@+id/btnAppleAdd"
+                        android:layout_width="300dp"
+                        android:layout_height="75dp"
+                        android:text="ADD"
+                        android:textStyle="bold"
+                        android:textSize="30dp"
+                        android:layout_gravity="center"
+                        ></Button>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

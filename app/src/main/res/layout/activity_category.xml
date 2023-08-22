@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CategoryActivity"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/framelayout1"
+        android:layout_width="415dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="30dp"
+
+        android:background="@drawable/main_bg_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/btnBackCat"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:layout_margin="13dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="53dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:layout_marginLeft="80dp"
+            ></TextView>
+    </FrameLayout>
+    <SearchView
+        android:layout_width="360dp"
+        android:layout_height="30dp"
+        android:background="@color/whitegreen"
+        android:layout_gravity="center"
+        ></SearchView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Orange"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="25dp"></TextView>
+
+                <ImageView
+                    android:id="@+id/OrangePic"
+                    android:layout_width="93dp"
+                    android:layout_height="92dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/orange" />
+                <!--                <Button-->
+                <!--                    android:layout_width="80dp"-->
+                <!--                    android:layout_height="55dp"-->
+                <!--                    android:text="+"-->
+                <!--                    android:layout_marginTop="160dp"-->
+                <!--                    android:layout_centerHorizontal="true">-->
+                <!--                </Button>-->
+                <ImageButton
+                    android:id="@+id/btnAdd1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_add"
+                    android:contentDescription="Back"
+                    android:layout_marginTop="160dp"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Apple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Apple"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="25dp"/>
+
+                <ImageView
+                    android:id="@+id/ApplePic"
+                    android:layout_width="93dp"
+                    android:layout_height="92dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/apple" />
+                <ImageButton
+                    android:id="@+id/btnAdd2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_add"
+                    android:contentDescription="Back"
+                    android:layout_marginTop="160dp"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Coconut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Coconut"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="25dp"/>
+
+                <ImageView
+                    android:id="@+id/CoconutPic"
+                    android:layout_width="93dp"
+                    android:layout_height="92dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/coconut" />
+                <ImageButton
+                    android:id="@+id/btnAdd3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_add"
+                    android:contentDescription="Back"
+                    android:layout_marginTop="160dp"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Pineapple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Pineapple"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="25dp"/>
+
+                <ImageView
+                    android:id="@+id/PineapplePic"
+                    android:layout_width="93dp"
+                    android:layout_height="92dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/pineapple" />
+                <ImageButton
+                    android:id="@+id/btnAdd4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_add"
+                    android:contentDescription="Back"
+                    android:layout_marginTop="160dp"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Pear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Pear"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="25dp"/>
+
+                <ImageView
+                    android:id="@+id/PearPic"
+                    android:layout_width="93dp"
+                    android:layout_height="92dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/pear" />
+                <ImageButton
+                    android:id="@+id/btnAdd5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_add"
+                    android:contentDescription="Back"
+                    android:layout_marginTop="160dp"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Avocado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Avocado"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="25dp"/>
+
+                <ImageView
+                    android:id="@+id/AvocadoPic"
+                    android:layout_width="93dp"
+                    android:layout_height="92dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/avocado" />
+                <ImageButton
+                    android:id="@+id/btnAdd6"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_add"
+                    android:contentDescription="Back"
+                    android:layout_marginTop="160dp"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Next Page"
+        android:src="@drawable/ic_next" />
+
+
+</LinearLayout>
